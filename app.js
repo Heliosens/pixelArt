@@ -4,19 +4,31 @@ let white = document.getElementById('white');
 let black = document.getElementById('black');
 let yellow = document.getElementById('yellow');
 let green = document.getElementById('green');
+let orange = document.getElementById('orange');
 
-let container = document.getElementById('frame');
-let frame = container.getElementsByTagName('div');
-console.log(frame);
-console.log(frame.length);
+let frame = document.getElementById('frame');
+let frameDiv = frame.getElementsByTagName('div');
 
-let colorFrame = blue;
+console.log(frameDiv.length);
+
+let colorBase = document.getElementById('colorBase').getElementsByTagName('div');
+console.log(colorBase);
+
+let colorFrame = "blue";
+
+for (let i = 0 ; i < colorBase.length ; i++){
+    colorBase[i].addEventListener('click', function (){
+        colorFrame = colorBase[i].id;
+    })
+}
+
 console.log(colorFrame);
 
-container.addEventListener('click', function (){
-        for (let i = 0 ; i < frame.length; i++){
-            frame[i].addEventListener('mouseover', function (){
-                frame[i].style.backgroundColor = colorFrame.toString();
+frame.addEventListener('click', function (){
+        for (let i = 0 ; i < frameDiv.length; i++){
+            frameDiv[i].addEventListener('mouseover', function (){
+                frameDiv[i].style.backgroundColor = colorFrame;
+                frameDiv[i].style.borderColor = colorFrame;
             })
         }
     }

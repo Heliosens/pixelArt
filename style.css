@@ -12,13 +12,32 @@ body {
     width: 100%;
 }
 
-section, header {
-    margin: 5rem;
+main {
     width: 50rem;
+    margin: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+header div {
+    width: 4rem;
+    height: 4rem;
+    border: 1px black solid;
+}
+
+#frame {
+    border: 1px black solid;
 }
 
 #blue {
@@ -45,13 +64,21 @@ section, header {
     background-color: green;
 }
 
-section div, header div {
+#orange {
+    background-color: orange;
+}
+
+#purple {
+    background-color: purple;
+}
+
+section div {
     width: 2rem;
     height: 2rem;
-    border: 1px black solid;
+    border: 1px white solid;
 }
 
 section div:hover {
-    background-color: purple;
+    background-color: blue;
 }
 
