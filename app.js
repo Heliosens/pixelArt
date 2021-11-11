@@ -12,7 +12,6 @@ let frameDiv = frame.getElementsByTagName('div');
 console.log(frameDiv.length);
 
 let colorBase = document.getElementById('colorBase').getElementsByTagName('div');
-console.log(colorBase);
 
 let colorFrame = "blue";
 
@@ -21,8 +20,6 @@ for (let i = 0 ; i < colorBase.length ; i++){
         colorFrame = colorBase[i].id;
     })
 }
-
-console.log(colorFrame);
 
 frame.addEventListener('click', function (){
         for (let i = 0 ; i < frameDiv.length; i++){
@@ -33,3 +30,4 @@ frame.addEventListener('click', function (){
         }
     }
 )
+

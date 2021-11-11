@@ -13,17 +13,19 @@ body {
 }
 
 main {
-    width: 50rem;
-    margin: 5rem;
+    margin: 2rem 15rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 section {
-    margin-top: 5rem;
+    flex-basis: 61%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,9 +75,10 @@ header div {
 }
 
 section div {
-    width: 2rem;
-    height: 2rem;
-    border: 1px white solid;
+    width: 2.5rem;
+    height: 2.5rem;
+    /*border: 1px white solid;*/
+    background: lightblue;
 }
 
 section div:hover {
