@@ -6,6 +6,8 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 body {
@@ -13,37 +15,66 @@ body {
 }
 
 main {
-    margin: 2rem 15rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 header {
+    flex-basis: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-}
-
-section {
-    flex-basis: 61%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
 }
 
 header div {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: 1px black solid;
 }
 
-#frame {
+#choice {
+    height: 100%;
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+
+#choice span {
+    border-radius: 15%;
     border: 1px black solid;
+    padding: 1rem;
+    background-color: grey;
+}
+
+#frame {
+    width: 402px;
+    border: 1px black solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#frame div {
+    width: 20px;
+    height: 20px;
+}
+
+#frame div:hover {
+    background-color: lightgray;
 }
 
 #blue {
     background-color: blue;
+}
+
+#dodgerblue {
+    background-color: dodgerblue;
 }
 
 #red {
@@ -74,14 +105,19 @@ header div {
     background-color: purple;
 }
 
-section div {
-    width: 2.5rem;
-    height: 2.5rem;
-    /*border: 1px white solid;*/
-    background: lightblue;
-}
-
-section div:hover {
+#activColor {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    align-self: center;
     background-color: blue;
+    margin: 8rem 0;
 }
 
+#mod {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
