@@ -35,7 +35,7 @@ let go = 0;
 let paint = function (){
 
     for (let i = 0 ; i < frameDiv.length; i++){
-        frameDiv[i].addEventListener('mouseover', function (event){
+        frameDiv[i].addEventListener('mouseover', function (){
             if(go){
                 frameDiv[i].style.backgroundColor = colorFrame;
             }

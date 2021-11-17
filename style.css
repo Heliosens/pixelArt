@@ -29,7 +29,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    border: 3px double black;
 }
 
 header div {
@@ -114,7 +113,7 @@ header div {
     background-color: darkred;
 }
 
-#pink {
+#deeppink {
     background-color: deeppink;
 }
 
