@@ -1,7 +1,6 @@
 let main = document.querySelector('main');
 let frame = document.getElementById('frame');
 let frameDiv = frame.getElementsByTagName('div');
-console.log(frameDiv.length);
 let spanMod = document.getElementById('mod').getElementsByTagName("span");
 let pix = document.getElementById('pix');
 let pt = document.getElementById('pt');
