@@ -16,7 +16,7 @@ let frameHeight = 40;
 
 for(let i = 0 ; i < frameWidth*frameHeight ; i++){
     let square = document.createElement('div');
-    let size = innerWidth / (2 * frameWidth);
+    let size = innerHeight / frameHeight;
     square.style.width = size + 'px';
     square.style.height = size + 'px';
     frame.appendChild(square);
@@ -26,7 +26,8 @@ let colorFrame = "blue";
 
 for (let i = 0 ; i < colorBase.length ; i++){
     colorBase[i].addEventListener('click', function (){
-        colorFrame = colorBase[i].id;
+        colorFrame = colorBase[i].style.backgroundColor;
+
         activColor.style.backgroundColor = colorFrame;
     })
 }
