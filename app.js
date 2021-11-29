@@ -17,6 +17,7 @@ for(let i = 0 ; i < frameWidth*frameHeight ; i++){
     let size = innerHeight / frameHeight;
     square.style.width = size + 'px';
     square.style.height = size + 'px';
+
     frame.appendChild(square);
 }
 
@@ -25,12 +26,12 @@ let colorFrame = "blue";
 
 /**     todo create colorBase square
  *      give each colorBase a RGB background color
+ *      create table of value x,y,z => 0 to 255
  *      on click get the RGB code
  **/
 
 // create colorBase square
 let numOfColorBase = 12;
-
 
 
 for (let i = 0 ; i < colorBase.length ; i++){
@@ -52,7 +53,7 @@ let go = 0;
 
 let paint = function (){
     for (let i = 0 ; i < frameDiv.length; i++){
-        frameDiv[i].addEventListener('mouseover', function (){
+        frameDiv[i].addEventListener('mousemove', function (){
             if(go){
                 frameDiv[i].style.backgroundColor = colorFrame;
             }

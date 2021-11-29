@@ -66,7 +66,7 @@ header div:hover {
 
 
 #frame div:hover {
-    background-color: lightgray;
+    background-color: lightgray !important;
 }
 
 #blue {
