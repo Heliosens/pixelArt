@@ -54,16 +54,12 @@ header div {
 }
 
 #frame {
-    width: 502px;
+    width: 50%;
     border: 1px black solid;
     display: flex;
     flex-wrap: wrap;
 }
 
-#frame div {
-    width: 25px;
-    height: 25px;
-}
 
 #frame div:hover {
     background-color: lightgray;

@@ -10,6 +10,18 @@ let activColor = document.getElementById('activColor');
 main.style.width = innerWidth + "px";
 main.style.height = innerHeight + "px";
 
+// choice zone size of picture width / height
+let frameWidth = 40;
+let frameHeight = 40;
+
+for(let i = 0 ; i < frameWidth*frameHeight ; i++){
+    let square = document.createElement('div');
+    let size = innerWidth / (2 * frameWidth);
+    square.style.width = size + 'px';
+    square.style.height = size + 'px';
+    frame.appendChild(square);
+}
+
 let colorFrame = "blue";
 
 for (let i = 0 ; i < colorBase.length ; i++){
@@ -20,12 +32,9 @@ for (let i = 0 ; i < colorBase.length ; i++){
 }
 
 let pixel = function (){
-
     for (let i = 0 ; i < frameDiv.length; i++) {
         frameDiv[i].addEventListener('click', function () {
             frameDiv[i].style.backgroundColor = colorFrame;
-            // frameDiv[i].style.borderColor = colorFrame;
-
         })
     }
 }
@@ -33,7 +42,6 @@ let pixel = function (){
 let go = 0;
 
 let paint = function (){
-
     for (let i = 0 ; i < frameDiv.length; i++){
         frameDiv[i].addEventListener('mouseover', function (){
             if(go){
@@ -45,8 +53,6 @@ let paint = function (){
 
 for (let i = 0 ; i < spanMod.length ; i++){
     spanMod[i].addEventListener('click', function (){
-        console.log("i = " + i);
-
         switch (i){
             case 0 :
                 go = 0;
