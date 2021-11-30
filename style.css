@@ -58,7 +58,6 @@ header div:hover {
 }
 
 #frame {
-    width: 50%;
     border: 1px black solid;
     display: flex;
     flex-wrap: wrap;

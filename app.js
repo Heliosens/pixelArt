@@ -7,16 +7,19 @@ let pt = document.getElementById('pt');
 let colorBase = document.getElementById('colorBase').getElementsByTagName('div');
 let activColor = document.getElementById('activColor');
 
+frame.style.width = (innerWidth * .9) / 2 + "px";
+frame.style.height = (innerHeight * .9) + "px";
+
 // choice zone size of picture width / height
-let frameWidth = 30;
-let frameHeight = 30;
+let col = 30;
+// let line = 30;
 
 // create each square
-for(let i = 0 ; i < frameWidth*frameHeight ; i++){
+for(let i = 0 ; i < col ** 2 ; i++){
     let square = document.createElement('div');
-    let size = innerHeight / frameHeight;
-    square.style.width = size + 'px';
-    square.style.height = size + 'px';
+    square.style.display = "flex";
+    square.style.width = 100 / col + "%"
+    square.style.height = 100 / col + "vh";
 
     frame.appendChild(square);
 }
@@ -53,7 +56,7 @@ let go = 0;
 
 let paint = function (){
     for (let i = 0 ; i < frameDiv.length; i++){
-        frameDiv[i].addEventListener('mousemove', function (){
+        frameDiv[i].addEventListener('mouseover', function (){
             if(go){
                 frameDiv[i].style.backgroundColor = colorFrame;
             }
