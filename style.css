@@ -63,7 +63,6 @@ header div:hover {
     flex-wrap: wrap;
 }
 
-
 #frame div:hover {
     background-color: lightgray !important;
 }
@@ -131,4 +130,11 @@ header div:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    main, #activColor {
+        flex-direction: column;
+    }
+
 }
