@@ -18,8 +18,8 @@ let col = 30;
 for(let i = 0 ; i < col ** 2 ; i++){
     let square = document.createElement('div');
     square.style.display = "flex";
-    square.style.width = 100 / col + "%"
-    square.style.height = 100 / col + "vh";
+    square.style.width = 100 / col + "%";
+    square.style.paddingBottom = 100 / col + "%";
 
     frame.appendChild(square);
 }
